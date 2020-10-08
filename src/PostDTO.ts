@@ -1,20 +1,20 @@
-export default class PostDTO
-{
+export default class PostDTO {
     constructor(
         public PostID: number,
         public Url: URL,
         public Points: number,
         public Author: string,
         public DatePosted: Date,
-        public CommentsCount: number)
-    {
+        public CommentsCount: number) {
 
     }
 }
-/**
- * url
- * points
- * author
- * timestamp
- * commentscount
-*/
+
+export interface PostDTO2 {
+    postID: number,
+    url: URL,
+    points: number,
+    author: string,
+    datePosted: Date,
+    commentsCount: number
+}
